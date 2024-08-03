@@ -1,0 +1,16 @@
+{% block content %}
+
+<form method="POST">
+    <label for="nome">Nome do Produto:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="preco">Preço</label><br>
+    <input type="number" step="0.01" id="preco" name="preco" required><br><br>
+
+    <label for="marca">Marca:</label><br>
+    <input type="text" id="marca" name="marca" required><br><br>
+
+    <input type="submit" value="Enviar">
+</form>
+
+{% endblock content%}

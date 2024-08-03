@@ -1,0 +1,14 @@
+{% block content %}
+{% for brand in [
+    'TechBrand', 'SmartCorp', 'CoolHome', 'FitWear', 'SportLine', 'TimeMaster', 'SoundPro', 'GigaTech', 'DisplayMax', 
+    'PhotoGear', 'OutdoorLife', 'VisionPlus', 'KitchenMaster', 'WashTech', 'CookSmart', 'CleanHome', 'CoffeeMaster', 
+    'ToolPro', 'BuildTech', 'CutPro', 'CycleGear', 'UrbanMove', 'Sk8Master', 'AceRacquet', 'KickSport', 'MusicTone', 
+    'KeySound', 'RockStrum', 'BeatMaker', 'ProVoice', 'WristTech', 'ChargeMax', 'EnergyPlus', 'GameSound', 
+    'ClickPro', 'TypeMaster', 'VisionCurve', 'Print3D', 'SkyVision', 'VoiceHome'] 
+%}
+    <form action="{{ url_for('products_brand', marca=brand) }}" method="get">
+        <button type="submit">{{ brand }}</button>
+    </form>
+{% endfor %}
+
+{% endblock content %}

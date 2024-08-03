@@ -1,0 +1,10 @@
+{% block content %}
+
+<h1>Encontre produtos por: </h1>
+<form action="{{ url_for('choose_category_product') }}" method="get">
+    <button type="submit">Categorías</button>
+</form>
+<form action="{{ url_for('choose_brand_product') }}" method="get">
+    <button type="submit">Marcas</button>
+</form>
+{% endblock content%}

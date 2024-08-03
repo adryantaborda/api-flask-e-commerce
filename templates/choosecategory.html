@@ -1,0 +1,29 @@
+{% block content %}
+
+<form action="{{ url_for('products_category', categoria='acessorios') }}" method="get">
+    <button type="submit">Acessórios</button>
+</form>
+<form action="{{ url_for('products_category', categoria='eletronicos') }}" method="get">
+    <button type="submit">Eletrônicos</button>
+</form>
+<form action="{{ url_for('products_category', categoria='eletrodomesticos') }}" method="get">
+    <button type="submit">Eletrodomesticos</button>
+</form>
+<form action="{{ url_for('products_category', categoria='roupas') }}" method="get">
+    <button type="submit">Roupas</button>
+</form>
+<form action="{{ url_for('products_category', categoria='fotografia') }}" method="get">
+    <button type="submit">Fotografia</button>
+</form>
+<form action="{{ url_for('products_category', categoria='ferramentas') }}" method="get">
+    <button type="submit">Ferramentas</button>
+</form>
+<form action="{{ url_for('products_category', categoria='esportes') }}" method="get">
+    <button type="submit">Esportes</button>
+</form>
+<form action="{{ url_for('products_category', categoria='instrumentos_musicais') }}" method="get">
+    <button type="submit">Instrumentos Musicais</button>
+</form>
+
+
+{% endblock content%}
